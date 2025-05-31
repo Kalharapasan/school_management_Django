@@ -1,15 +1,95 @@
-# school_management_Djnago
 
-**Instructions**
-- Install the Requirements: `pip install -r requirements.txt`
-- Then, make database migrations: `python manage.py makemigrations` / `python manage.py migrate`
-- And finally, run the application: `python manage.py runserver`
+# 🏫 School Management System (Django)
 
-<h3>Figma Link</h3>
-- https://www.figma.com/file/nfgKFgF2iKOuYLEZedmkKa/School_Management_System?t=ihf8SLLdx39zrSyh-1
+A full-featured **School Management System** built with Django. This web-based application helps administrators manage students, staff, classes, attendance, results, and more in a structured way.
 
-**<h3>ClI Commands </h3>**
+---
 
-- `python -m pip install --upgrade pip`<br>
-- `pip install django`<br>
-- `django-admin --version`<br>
+## ✨ Features
+
+- 👩‍🎓 Student Registration & Management
+- 🧑‍🏫 Teacher & Staff Management
+- 🏫 Class Scheduling and Organization
+- 📚 Subject Allocation
+- 📊 Student Results and Grades
+- 📅 Attendance Tracking
+- 🔐 User Authentication with Login System
+- 🛠 Admin Panel for Superusers
+- 🌐 Web-based interface using HTML, CSS, and Bootstrap
+
+---
+
+## 🛠️ Tech Stack
+
+- **Python 3.x**
+- **Django** (Web framework)
+- **SQLite3** (Default DB; can be swapped with PostgreSQL or MySQL)
+- **HTML/CSS + Bootstrap** (Frontend)
+
+---
+
+## 📦 Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/Kalharapasan/school_management_Django.git
+cd school_management_Django
+
+
+# Create and activate a virtual environment (optional but recommended)
+python -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+
+# Install required packages
+pip install -r requirements.txt
+
+# Run migrations
+python manage.py makemigrations
+python manage.py migrate
+
+# Create superuser (admin)
+python manage.py createsuperuser
+
+# Start the development server
+python manage.py runserver
+```
+
+---
+
+## 🌐 Accessing the App
+
+- Visit `http://127.0.0.1:8000/` for the frontend
+- Visit `http://127.0.0.1:8000/admin/` for the Django Admin Panel
+
+---
+
+## 📁 Folder Structure
+
+```
+school-management-django/
+├── school/               # Django app
+├── static/               # CSS, JS, images
+├── templates/            # HTML templates
+├── db.sqlite3            # SQLite database
+├── manage.py
+└── README.md
+```
+
+---
+
+## ✅ TODO (Future Enhancements)
+
+- [ ] Add timetable generator
+- [ ] SMS/email notification system
+- [ ] Student/parent portal
+- [ ] Attendance using QR or biometric
+
+---
+
+## 📃 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+> Built with ❤️ using Django
